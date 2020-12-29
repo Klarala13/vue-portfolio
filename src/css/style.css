@@ -14,20 +14,22 @@ hr {
   font-size: 25px;
 }
 /*About me*/
-.tab-content {
-  height: 400px;
-}
+
 .card {
   height: 250px;
+  margin: 1rem;
 }
 .about-img {
   height: 250px;
 }
+
 /*Footer*/
-i {
-  color: darkgrey;
+i,
+a {
+  color: #a9a9a9;
 }
-i:hover {
+i:hover,
+a:hover {
   color: #212529;
   text-decoration: underline;
 }
