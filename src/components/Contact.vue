@@ -3,7 +3,7 @@
     <h1>Contact</h1>
     <hr />
     <form
-      class="form text-center m-3"
+      class="form text-center m-3 p-3"
       action="https://formspree.io/claradevelopment@gmail.com"
       method="POST"
     >
@@ -35,7 +35,13 @@
         ></textarea>
       </fieldset>
       <fieldset>
-        <button id="contact-submit" data-submit="...Sending">Submit</button>
+        <button
+          class="btn btn-outline-dark"
+          id="contact-submit"
+          data-submit="...Sending"
+        >
+          Submit
+        </button>
       </fieldset>
     </form>
   </div>
