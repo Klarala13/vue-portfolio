@@ -4,7 +4,7 @@
       <h1>Projects</h1>
       <hr />
       <div class="row">
-        <div class="col-lg 3 col-md-3 col-sm-12 col-xs-12">
+        <div class="col-lg 3 col-md-4 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Snake Game</h5>
@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg 3 col-md-3 col-sm-12 col-xs-12">
+        <div class="col-lg 3 col-md-4 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">ToDo List</h5>
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg 3 col-md-3 col-sm-12 col-xs-12">
+        <div class="col-lg 3 col-md-4 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Weather API</h5>
@@ -57,7 +57,7 @@
       </div>
 
       <div class="row mt-3">
-        <div class="col-lg 3 col-md-3 col-sm-12 col-xs-12">
+        <div class="col-lg 3 col-md-4 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Monster Game</h5>
@@ -74,7 +74,7 @@
           </div>
         </div>
 
-        <div class="col-lg 3 col-md-3 col-sm-12 col-xs-12">
+        <div class="col-lg 3 col-md-4 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Dad Jokes</h5>
@@ -91,7 +91,7 @@
           </div>
         </div>
 
-        <div class="col-lg 3 col-md-3 col-sm-12 col-xs-12">
+        <div class="col-lg 3 col-md-4 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Job Crawler</h5>
@@ -111,13 +111,11 @@
       </div>
 
       <div class="row mt-3">
-        <div class="col-lg 3 col-md-3 col-sm-12 col-xs-12">
+        <div class="col-lg 3 col-md-4 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Calcoolator</h5>
-              <p class="card-text">
-                Simple React calculator
-              </p>
+              <p class="card-text">Simple React calculator</p>
               <a
                 href="https://klarala13.github.io/React-calculator/"
                 target="_blank"
@@ -127,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg 3 col-md-3 col-sm-12 col-xs-12">
+        <div class="col-lg 3 col-md-4 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Step Sequencer</h5>
@@ -144,7 +142,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg 3 col-md-3 col-sm-12 col-xs-12">
+        <div class="col-lg 3 col-md-4 col-sm-12 col-xs-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Mood Enhancer</h5>
