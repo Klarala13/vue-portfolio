@@ -9,14 +9,14 @@
             <div>
               <b-tabs content-class="mt-3">
                 <b-tab title="Just me" active>
-                  <div class="m-2 d-flex justify-content-between">
+                  <div class="col-12">
                     <img
                       src="/images/profile.jpg"
-                      class="rounded float-left about-img mt-5"
+                      class="rounded float-left about-img mr-3"
                       alt="Me, developing"
                     />
                     <div>
-                      <p class="m-5">
+                      <p class="mt-2">
                         I have been falling in love with both the front and the
                         backend for the past two years now. I am currently
                         working at
