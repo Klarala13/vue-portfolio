@@ -13,7 +13,7 @@
         <b-nav-item href="#stack" class="nav-link p-3">Stack</b-nav-item>
         <b-nav-item href="#contact" class="nav-link p-3">Contact</b-nav-item>
         <b-nav-item-dropdown text="CV" class="mt-0.7 p-3">
-          <b-dropdown-item href="cv/ITCV.pdf" target="blank"
+          <b-dropdown-item href="cv/CVIngles.pdf" target="blank"
             >EN</b-dropdown-item
           >
           <b-dropdown-item href="cv/IT-CVesp.pdf" target="blank"
