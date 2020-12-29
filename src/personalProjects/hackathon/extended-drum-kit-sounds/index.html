@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DRUM KIT</title>
+
+  <!-- getting symbols for buttons from fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+  <!-- normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div id="sequencer">
+    <div class="sequencer">
+      <div class="buttons">
+        <!-- check class of button play -->
+        <button id="stop" class="navigation-buttons fa fa-stop"></button>
+        <button id="play" class="navigation-buttons fa fa-play"></button>
+        <button class="navigation-buttons fa fa-microphone"></button>
+        <button id="trash" class="navigation-buttons fa fa-trash" onclick="clearSelectedPads()"></button>
+
+        <!-- settings, bpm and other stuff -->
+        <!-- here comes a bpm slider -->
+        <div class="select-wrapper">
+          <span>Instrument</span>
+          <select data-label="wave" class="wave navigation-buttons">
+            <option class="optionColor">Synth</option>
+            <option class="optionColor">Drums</option>
+            <option>Orchestra</option>
+          </select>
+        </div>
+
+        <div class="select-wrapper">
+          <span>Octave</span>
+          <select data-label="octave" class="octave navigation-buttons">
+            <option> 1</option>
+            <option>2</option>
+            <option> 3</option>
+          </select>
+        </div>
+
+        <div class="select-wrapper">
+          <span>Style</span>
+          <select data-label="octave" class="BPM navigation-buttons">
+            <option>Legato</option>
+            <option>Staccato</option>
+          </select>
+        </div>
+
+        <div class="select-wrapper slide-container">
+
+          <br>
+          <div class="input-container">
+
+            <span id="demo"></span>
+
+            <input type="range" min="60" max="200" value="120" class="slider" id="myRange">
+          </div>
+        </div>
+
+        <!-- here comes the description of what the line is or sounds like -->
+        <ul class="notes">
+          <li>G4</li>
+          <li>F#4</li>
+          <li>F4</li>
+          <li>E4</li>
+          <li>D#4</li>
+          <li>D4</li>
+          <li>C#4</li>
+          <li>C4</li>
+        </ul>
+      </div>
+
+      <!-- THE SEQUENCER -->
+      <div class="flex">
+        <!--  At the moment the pads have different classes.
+              "pad" is the normal styling of the pad.
+              This class is always on. Please don't delete it.
+
+              Extend by class "active". The whole
+              vertical line of the sequencer is gonna be active.
+              So there will be two classes: "pad active".
+
+              Extended with "on" when one pad is clicked on.
+              So the whole thing is "pad on".
+          
+              As it looks like we gonna change the stylings of the
+              pads with javascript. So we're maybe don't need further
+              classes other than "pad" for the pads.
+          -->
+
+        <!-- 1. line of pads -->
+        <div id="step-1" class="pads-column">
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+        </div>
+
+        <!-- 2. line of pads -->
+        <div id="step-2" class="pads-column step-play">
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+        </div>
+
+        <!-- 3. line of pads -->
+        <div id="step-3" class="pads-column">
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+        </div>
+
+        <!-- 4. line of pads-column -->
+        <div id="step-4" class="pads-column">
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+        </div>
+
+        <!-- 5. line of pads-column -->
+        <div id="step-5" class="pads-column">
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+        </div>
+
+        <!-- 6. line of pads-column -->
+        <div id="step-6" class="pads-column">
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+        </div>
+
+        <!-- 7. line of pads-column -->
+        <div id="step-7" class="pads-column">
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+        </div>
+
+        <!-- 8. line of pads-column -->
+        <div id="step-8" class="pads-column">
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+          <div class="pad"></div>
+        </div>
+        <!-- END OF THE SEQUENCER -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Script for BPM slider -->
+  <script src="javascript/sliderBPM.js"></script>
+  <!-- JS Script for changing Classes by pressing -->
+  <script src="javascript/changeClasses.js"></script>
+  <script src="js/sounds.js"></script>
+</body>
+
+</html>

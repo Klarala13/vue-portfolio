@@ -1,0 +1,36 @@
+/*Global*/
+
+* {
+  box-sizing: content-box;
+}
+body {
+  margin-top: 100px;
+}
+hr {
+  color: black;
+}
+.jumbotron {
+  width: 100vw;
+}
+/*Header*/
+#my-nav a {
+  font-size: 25px;
+}
+/*About me*/
+.tab-content {
+  height: 400px;
+}
+.card {
+  height: 250px;
+}
+.about-img {
+  height: 250px;
+}
+/*Footer*/
+i {
+  color: darkgrey;
+}
+i:hover {
+  color: #212529;
+  text-decoration: underline;
+}
