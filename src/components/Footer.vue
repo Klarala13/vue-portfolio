@@ -2,7 +2,7 @@
   <footer>
     <div class="container footer">
       <div class="row m-3">
-        <div class="col-12 d-flex justify-content-around mb-3">
+        <div class="col-12 d-flex justify-content-around">
           <a
             class="icon"
             href="https://github.com/Klarala13"

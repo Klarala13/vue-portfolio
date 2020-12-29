@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div>
-      <app-header></app-header>
-    </div>
+    <app-header></app-header>
     <div>
       <app-jumbotron></app-jumbotron>
       <projects></projects>
